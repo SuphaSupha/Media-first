@@ -1,0 +1,84 @@
+/* body * {
+    outline: 1px solid red;
+} */
+
+body {
+    background-color: #bdbdbde3;
+}
+header, main {
+    width: 80%;
+    margin: 24px auto;
+}
+.toper {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+}
+.toper h1 {
+    padding: 4px 16px;
+    color: rgb(61, 60, 60);
+} 
+.toper img {
+    height: 60px ;
+    width: 120px;
+}
+.top-mid  {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 1px rgb(88, 88, 88);
+    padding: 32px
+}
+.top-mid a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color:rgb(61, 60, 60)  ;
+    font-size: 20px;
+}
+main {
+    display: flex;
+  }
+
+.block {
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px rgb(88, 88, 88);
+    border-radius: 0.5rem;
+    padding: 64px 0px;
+    margin: 4px;
+
+  }
+  
+aside {
+    flex: 1;
+  }
+main > .block {
+    flex: 3;
+   
+  }
+@media screen and (max-width:768px) {
+    header, main {
+        width: 95%;
+        margin: 24px auto;
+    }
+    .top-mid {
+        padding: 16px 0px;
+    }
+    .top-mid a {
+        display: block;
+        text-align: start;
+        width: 100%;
+        padding: 24px 0px;
+        border-bottom: 1px solid  gray;
+    }
+
+    main {
+        display: block;
+    }
+    main #help {
+        display: none;
+    }
+    .block {
+        padding: 32px;
+        margin: 6px 0px ;
+    }
+}
